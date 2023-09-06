@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.encabezado {
+  background-color: white;
+  width: 100%;
+}
+.bienvenidos {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: lighter;
+  background-color: black;
+  padding: 5px;
+  margin: 0;
+}
+
+.contenedoriniciar {
+  background-color: black;
+}
+
+.numerito {
+  font-size: 12px;
+}
+
+.cuenta {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cuenta > li {
+  list-style-type: none;
+}
+
+.inicio {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: lighter;
+  padding-right: 40px;
+}
+
+.botoncarrito {
+  text-decoration: none;
+  color: black;
+}
+.padre {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: #edede9;
+  padding: 15px;
+}
+.listas {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 0;
+}
+.navegacion {
+  font-family: "Amita", cursive;
+  font-family: "Cormorant", serif;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: justify;
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+}
+.hover:hover {
+  top: 0px;
+  color: white;
+}
+.pie {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contenedorimg {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 350px 150px;
+  grid-template-rows: 250px 250px;
+  grid-template-areas:
+    "img1 img2"
+    "img1 img3";
+  gap: 30px;
+  margin-bottom: 150px;
+}
+.botonagregar {
+  width: 200px;
+}
+
+.imgproducto1 {
+  width: 350px;
+  height: 500px;
+}
+.img1 {
+  grid-area: img1;
+}
+
+.imgproducto2 {
+  width: 150px;
+  height: 250px;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.imgproducto3 {
+  width: 150px;
+  height: 250px;
+  grid-area: imgproducto3;
+}
+
+.img3 {
+  grid-area: img3;
+}
+
+.enviospago {
+  height: 20vh;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 400px);
+}
+.enviospais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mediospago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.descuentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parrafoenvios {
+  font-size: 23px;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: bold;
+}
+.politicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.politicas > p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.parrafoproducto {
+  display: flex;
+  justify-content: center;
+  font-stretch: expanded;
+  font-weight: 700;
+}
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 1px 15px 0px rgb(0, 0, 0, 0.3);
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px 0px rgb(0, 0, 0, 0.6);
+  transform: translateY(-3%);
+}
+
+/* RESPONSIVE PARA CELULAR */
+
+@media screen and (max-width: 320px) {
+  .cuenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+  }
+
+  .inicio {
+    font-size: 10px;
+    padding-right: 15px;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .listas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedorimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgproducto1 {
+    width: 320px;
+    height: 400px;
+  }
+  .imgproducto2 {
+    width: 320px;
+    height: 400px;
+  }
+  .imgproducto3 {
+    width: 320px;
+    height: 400px;
+  }
+  .enviospago {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .contenedorprod {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 5px;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 150px;
+  }
+  .productoimagen {
+    width: 150px;
+    height: 200px;
+  }
+  .botonagregar {
+    width: 150px;
+  }
+
+  .piecopy {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .cuenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  ol,
+  ul {
+    padding-left: 0;
+  }
+
+  .inicio {
+    font-size: 10px;
+    padding: 20px;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .listas {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenedorimg {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imgproducto1 {
+    width: 320px;
+    height: 400px;
+  }
+  .imgproducto2 {
+    width: 320px;
+    height: 400px;
+  }
+  .imgproducto3 {
+    width: 320px;
+    height: 400px;
+  }
+  .enviospago {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .contenedorprod {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 80px;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 150px;
+  }
+  .productoimagen {
+    width: 150px;
+    height: 200px;
+  }
+  .botonagregar {
+    width: 150px;
+  }
+
+  .piecopy {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1900px) {
+}

@@ -1,0 +1,42 @@
+.iniciarsesion {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: auto;
+  padding: 50px;
+  background-color: #edede9;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+
+.correoycontra {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  border: 1px;
+  width: 400px;
+}
+
+.lacontraseña {
+  color: black;
+  margin-bottom: 20px;
+}
+.lacontraseña > a {
+  color: black;
+}
+
+.botoninicio {
+  font-family: "Roboto Flex", sans-serif;
+  background-color: rgba(0, 0, 0, 0.89);
+  color: white;
+  padding: 5px;
+}
+
+.parrafocuenta {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.parrafocuenta > a {
+  font-weight: bold;
+  color: black;
+}
