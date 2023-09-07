@@ -264,8 +264,6 @@ ul {
     grid-template-columns: repeat(2, 150px);
     grid-template-rows: repeat(2, 350px);
     gap: 5px;
-    justify-content: center;
-    align-items: end;
     margin-bottom: 150px;
   }
   .productoimagen {
