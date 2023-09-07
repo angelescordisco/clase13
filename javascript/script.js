@@ -13,13 +13,3 @@ botonagregar.forEach((boton) => {
     numeroCarrito.innerText = numero++;
   });
 });
-
-// constante obtenida le haces el forEach
-
-//botones.forEach( boton => {
-//   button.addEventListener("click", () => {
-//obtendrias el id del numero del carrito
-//valor = valor.value++
-//   } )
-
-// })
